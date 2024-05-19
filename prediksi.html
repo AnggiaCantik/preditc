@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Historis</title>
+    <!-- Tambahkan link CSS Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body >
+    <object type="text/html" data="header.html" style="width:100%;"></object>
+    <div class="container mx-auto ">
+        <h1 class="text-2xl text-center font-bold mb-4">DATA PREDIKSI</h1>
+        <div class=" p-4 rounded-lg">
+            <div class="overflow-x-auto ">
+                <!-- Menampilkan tabel HTML yang telah di-generate -->
+                {{ table | safe }}
+            </div>
+        </div>
+    </div> 
+    <object type="text/html" data="footer.html" style="width:100%; height: 100%;"></object>
+</body>
+</html>
